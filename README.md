@@ -1,22 +1,29 @@
-# backlog-api
-A library to Easy Access Backlog(http://www.backlog.jp) API from Ruby.
+# Backlog
+
+TODO: Write a gem description
 
 ## Installation
-Ok, you just type
 
-    $ gem install backlog-api
+Add this line to your application's Gemfile:
 
-## How to use
-First, create backlog client to accessing API.
-Second, call API
+    gem 'backlog'
 
-    require 'backlog-api'
-    backlog = Backlog::Client.new("space", "user", "password")
-    # get Project List
-    projects = backlog.get_projects()
-    # get Issue
-    issue = backlog.get_issue("issue_key")
- 
-## Copyright
-Copyright (c) 2011 yoppi. See LICENSE.txt for further details.
+And then execute:
 
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install backlog
+
+## Usage
+
+TODO: Write usage instructions here
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request

@@ -1,7 +1,6 @@
-# coding: utf-8
+require "backlog/version"
 
 $:.unshift File.join(File.dirname(__FILE__))
-
 module Backlog
   require 'backlog/api'
   require 'backlog/object'

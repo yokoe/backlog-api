@@ -118,6 +118,21 @@ module Backlog
       self.call("backlog.countIssue", condition.to_h)
     end
 
+    def create_issue(params)
+      Backlog::Object::Issue.new(
+        self.call("backlog.createIssue", params)
+      )
+    end
+
+    def switch_issue_status(issue_key, status_id)
+      self.call("backlog.switchStatus", {"key" => issue_key, "statusId" => status_id})
+    end
+
+    def add_comment(issue_key, content)
+      p content
+      self.call("backlog.addComment", {"key" => issue_key, "content" => content})
+    end
+
     # String(Integer) -> Integer
     # String(String) -> String
     # Integer -> Integer
